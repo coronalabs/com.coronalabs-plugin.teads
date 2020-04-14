@@ -1,0 +1,33 @@
+<tv.teads.sdk.adContent.ui.view.componentView.EndScreenView
+    android:id="@+id/teads_end_screen"
+    style="@style/teads_end_screen"
+    android:contentDescription="@string/teads_endscreen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/teads_end_screen_replay_btn"
+            android:drawableLeft="@drawable/ic_teads_sdk_replay"
+            android:drawableStart="@drawable/ic_teads_sdk_replay"
+            android:contentDescription="@string/teads_endscreen_replay"
+            style="@style/teads_end_screen_replay_button"/>
+
+        <TextView
+            android:id="@+id/teads_end_screen_call_btn"
+            android:drawableLeft="@drawable/ic_teads_sdk_replay"
+            android:drawableStart="@drawable/ic_teads_sdk_replay"
+            android:contentDescription="@string/teads_endscreen_call_to_action"
+            style="@style/teads_end_screen_action_button"/>
+    </LinearLayout>
+
+    <tv.teads.sdk.adContent.ui.view.componentView.DonutProgress
+        android:id="@+id/teads_end_screen_donut_progress"
+        android:contentDescription="@string/teads_endscreen_countdown"
+        style="@style/teads_end_screen_donut_progress"/>
+
+</tv.teads.sdk.adContent.ui.view.componentView.EndScreenView>

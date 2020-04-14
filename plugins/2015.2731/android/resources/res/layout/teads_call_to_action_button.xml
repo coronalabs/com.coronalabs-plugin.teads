@@ -1,0 +1,5 @@
+<TextView
+    android:id="@+id/teads_textbutton"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/teads_call_to_action_button"
+    android:visibility="invisible"/>

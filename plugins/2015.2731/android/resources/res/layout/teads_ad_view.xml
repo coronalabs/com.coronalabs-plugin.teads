@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Need a frame Layout for the label because the texte view gravity doesn't work properly after a screen rotation (landscape -> portrait) -->
+    <FrameLayout
+        android:id="@+id/teads_frame_label"
+        style="@style/teads_frame_layout_creditlabel">
+
+        <tv.teads.sdk.adContent.ui.view.componentView.LabelView
+            android:id="@+id/teads_label"
+            style="@style/teads_label"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/teads_ad_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teads_frame_label"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:id="@id/teads_VideoContainerFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+        </FrameLayout>
+
+        <include layout="@layout/teads_ad_view_content"/>
+    </FrameLayout>
+
+    <!-- Need a frame Layout for the credit because the texte view gravity doesn't work properly after a screen rotation (landscape -> portrait) -->
+    <FrameLayout
+        android:id="@+id/teads_frame_credit"
+        style="@style/teads_frame_layout_creditlabel"
+        android:contentDescription="@string/teads_label"
+        android:layout_below="@+id/teads_ad_content">
+
+        <tv.teads.sdk.adContent.ui.view.componentView.CreditsView
+            android:id="@+id/teads_credits"
+            android:contentDescription="@string/teads_credit"
+            style="@style/teads_credit"/>
+
+    </FrameLayout>
+
+</merge>

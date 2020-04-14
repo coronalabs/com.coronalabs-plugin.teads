@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@id/teads_VideoContainerFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/teads_ad_view_content"/>
+
+    <ImageButton
+        android:id="@+id/teads_close_button_fullScreen"
+        style="@style/teads_close_button"
+        android:visibility="gone"
+        android:contentDescription="@string/teads_endscreen_close"
+        android:background="@drawable/teads_button_selector"
+        android:src="@drawable/ic_teads_sdk_exit_fullscreen"/>
+
+    <tv.teads.sdk.adContent.ui.view.componentView.SoundButtonView
+        android:id="@+id/teads_sound_button_fullScreen"
+        android:visibility="gone"
+        android:contentDescription="@string/teads_muteunmute"
+        style="@style/teads_sound_button">
+
+        <include layout="@layout/teads_sound_view"/>
+    </tv.teads.sdk.adContent.ui.view.componentView.SoundButtonView>
+
+</FrameLayout>

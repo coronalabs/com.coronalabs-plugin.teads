@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.teads.sdk.adContent.ui.view.AdapterAdContentVideoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/teads_ad_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/teads_ad_view"
+        />
+
+</tv.teads.sdk.adContent.ui.view.AdapterAdContentVideoView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <ImageButton
+        android:id="@+id/teads_play_ad_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:contentDescription="@string/teads_play_button"
+        android:src="@drawable/ic_teads_sdk_play"
+        android:visibility="gone"
+        />
+
+    <View
+        android:id="@+id/teads_top_gradient"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/teads_gradient_height"
+        android:layout_gravity="top"
+        android:background="@drawable/teads_top_gradient"/>
+
+    <View
+        android:id="@+id/teads_bottom_gradient"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/teads_gradient_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/teads_bottom_gradient"/>
+
+    <include layout="@layout/teads_endscreen_view"/>
+
+    <tv.teads.sdk.adContent.ui.view.componentView.CloseButtonView
+        android:id="@+id/teads_close_button"
+        android:contentDescription="@string/teads_skipdescription"
+        style="@style/teads_close_button">
+
+        <include layout="@layout/teads_countdown_imagebutton"/>
+    </tv.teads.sdk.adContent.ui.view.componentView.CloseButtonView>
+
+    <tv.teads.sdk.adContent.ui.view.componentView.SoundButtonView
+        android:id="@+id/teads_sound_button"
+        android:contentDescription="@string/teads_muteunmute"
+        style="@style/teads_sound_button">
+
+        <include layout="@layout/teads_sound_view"/>
+    </tv.teads.sdk.adContent.ui.view.componentView.SoundButtonView>
+
+
+    <tv.teads.sdk.adContent.ui.view.componentView.CallToActionButtonView
+        android:id="@+id/teads_call_to_action_button"
+        style="@style/teads_call_to_action_view"
+        android:contentDescription="@string/teads_call_to_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/teads_call_to_action_button"/>
+    </tv.teads.sdk.adContent.ui.view.componentView.CallToActionButtonView>
+
+    <tv.teads.sdk.adContent.ui.view.componentView.TimerTeadsView
+        android:id="@+id/teads_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"/>
+
+    <tv.teads.sdk.adContent.ui.view.componentView.TeadsProgressBarView
+        android:id="@+id/teads_progressBar"
+        style="@style/teads_VideoProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/teads_progressbar_height"
+        android:contentDescription="@string/teads_progressbar"
+        android:layout_gravity="bottom"
+        android:max="1000"/>
+
+
+</merge>
+

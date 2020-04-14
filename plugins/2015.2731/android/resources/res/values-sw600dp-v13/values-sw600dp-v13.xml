@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="teads_isTablet">true</bool>
+    <dimen name="teads_action_bar_default_height_material">64dp</dimen>
+    <dimen name="teads_action_bar_default_padding_material">4dp</dimen>
+</resources>

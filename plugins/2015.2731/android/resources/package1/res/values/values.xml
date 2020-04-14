@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+     <declare-styleable name="VuMeterView"><attr format="color" name="backgroundColor"/><attr format="integer" name="blockNumber"/><attr format="dimension" name="blockSpacing"/><attr format="integer" name="speed"/><attr format="dimension" name="stopSize"/><attr format="boolean" name="startOff"/></declare-styleable>
+</resources>
